@@ -22,3 +22,5 @@ certutil -M -n "Sub CA NAME - Project" -t "CT,C,C" -d sql:$HOME/.pki/nssdb
 It should work after restaring libreoffice, don't forget to set the Path of the NSS database in libre office
 link for explanation.
 https://askubuntu.com/questions/1225262/how-do-i-generate-a-certificate-to-sign-pdf-electronically
+
+dont forget also, to have a valid endpoint for the CRls (didn't try OSCP).
