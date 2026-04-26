@@ -20,6 +20,6 @@ openssl cms -verify -in hello.sig -inform PEM -content hello.txt -CAfile cms-sig
 openssl cms -in hello.sig -inform PEM -noout -certsout certs.pem
 ```
 6. See the details of CMS
-7. ```bash
+```bash
 openssl cms -cmsout -print -in hello.sig -inform PEM
-   ```
+```
